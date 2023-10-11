@@ -1,0 +1,14 @@
+package Ex1;
+
+public class Article {
+	int ref;
+	String description;
+	double prixHt;
+	int stock;
+	Article(int ref, String description, double prixHt, int stock) {
+		this.ref = ref;
+		this.description = description;
+		this.prixHt = prixHt;
+		this.stock = stock;
+	}
+}

@@ -1,0 +1,30 @@
+package Ex2;
+
+public class Point {
+	double x;
+	double y;
+	
+	Point(double x, double y) {
+		this.x = x;
+		this.y = y;
+	}
+	Point () {
+		this.x = 0;
+		this.y = 0;
+	}
+	
+	double distanceTo(Point p) {
+		double x2 = p.x;
+		double y2 = p.y;
+		double resultat = Math.sqrt(Math.pow((x - x2), 2) + Math.pow((y-y2), 2));
+		return resultat;
+	}
+	
+	
+	Point translate(double dx, double dy) {
+		double tx = x + dx;
+		double ty = y + dy;
+		return new Point(tx, ty);
+	}
+	
+}
